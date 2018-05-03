@@ -8,7 +8,7 @@
   <style>
     @font-face {
       font-family: futura;
-      src: url('font/FuturaStd-Book.otf');
+      src: url('assets/font/FuturaStd-Book.otf');
     }
     * {
       margin: 0;
@@ -29,37 +29,47 @@
       width: 600px;
       position: absolute;
       left: 50%;
-      top: 30%;
+      top: 27%;
       transform: translateX(-50%);
       text-align: center;
     }
     .content h1 {
       font-weight: 500;
-      font-size: 50px;
-      height: 90px;
+      font-size: 42px;
+      height: 80px;
+      line-height: 80px;
       color: #FCFAF2;
+    }
+    .content img {
+      width: 80px;
+      height: 80px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 5px solid #FCFAF2;
     }
     .content h2 {
       font-weight: normal;
-      font-size: 32px;
-      height: 64px;
+      font-size: 28px;
+      height: 58px;
       color: #FFFFFB;
     }
     .content p {
       height: 42px;
       letter-spacing: 1px;
-      font-size: 22px;
+      font-size: 20px;
     }
   </style>
 </head>
 <body>
   <div class='content'>
+    <img src="assets/img/avatar.jpg">
     <h1>Zichao Cheng</h2>
     <h2>Code, Lego, Gunpla & Console Game</h2>
     <p><a href="https://github.com/TATnoidea" target='_blank'>GitHub</a></p>
+    <p><a href="https://www.freecodecamp.cn/tatnoidea" target='_blank'>FreeCodeCamp</a></p>
     <p><a href="#">BLOG</a></p>
     <p><a href="https://www.zhihu.com/people/di-jun-50/activities" target='_blank'>Zhihu</a></p>
-    <p><a href="#">LinkedIn</a></p>
+    <p><a href="http://www.linkedin.com/in/chengzichao/">LinkedIn</a></p>
   </div>
   <div id='canvas'></div>
 </body>
