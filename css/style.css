@@ -21,8 +21,9 @@ body {
   width: 600px;
   position: absolute;
   left: 50%;
-  top: 27%;
-  transform: translateX(-50%);
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -270px;
   text-align: center;
 }
 .content h1 {
