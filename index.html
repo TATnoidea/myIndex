@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="favicon.ico">
-  <title>Zichao Cheng's Page</title>
+  <title>ZICHAO CHENG's Page</title>
   <style>
     @font-face {
       font-family: futura;
@@ -103,11 +103,96 @@
       letter-spacing: 1px;
       color: #FFFFFB;
     }
+    .play {
+      width: 50px;
+      height: 350px;
+      position: absolute;
+      top: -200px;
+      right:50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .play .line {
+      width: 3px;
+      height: 300px;
+      background-color: #fff;
+    }
+    .play .btn-play {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #7DB9DE;
+      border: 3px solid #fff;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .play .btn-play .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #7DB9DE;
+      box-sizing: border-box;
+      border: 3px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .play .btn-play .circle .triangle {
+      width: 0;
+      height: 0;
+      margin-left: 3px;
+      border-style: solid;
+      border-width: 10px 0 10px 18px;
+      border-color:#7DB9DE  #7DB9DE  #7DB9DE  #fff;
+    }
+    /* .play .btn-play .circle .triangle {
+      width: 3px;
+      height: 20px;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      transform: translate(-8px,-50%);
+      top: 50%;
+    } */
+    /* .play .btn-play .circle .triangle::before {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 20px;
+      background-color: #fff;
+      transform: rotate(-60deg);
+      position: absolute;
+      left: 10px;
+      top: -4px;
+    }
+    .play .btn-play .circle .triangle::after {
+      content: '';
+      display: block;
+      width: 3px;
+      height: 20px;
+      background-color: #fff;
+      transform: rotate(60deg);
+      position: absolute;
+      left: 10px;
+      top: 4px;
+    } */
   </style>
 </head>
 
 <body>
   <div class="container">
+    <div class="play">
+      <div class="line"></div>
+      <div class="btn-play">
+        <div class="circle">
+          <div class="triangle"></div>
+        </div>
+      </div>
+    </div>
     <div class='content'>
       <img src="assets/img/avatar.png">
       <h1>ZICHAO CHENG</h2>
